@@ -21,10 +21,7 @@ int main(void) {
         for (int x = 0; x < height; x++) {
             if (x <= y) {
                 printf("#");
-            } else {
-                printf(" ");
-            }
-        }
+            }        }
         printf("\n");
     }
     
