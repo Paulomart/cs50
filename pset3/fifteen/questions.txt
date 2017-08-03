@@ -1,0 +1,4 @@
+0. 3x3 - 9x9
+1. 2d int array
+2. greet()
+3. init(), draw(), move(), won()

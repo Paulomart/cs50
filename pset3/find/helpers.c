@@ -38,43 +38,6 @@ bool searchIntern(int value, int values[], int s, int n) {
         return false;
     }
 }
-/*
-bool searchIntern(int value, int values[], int s, int n) {
-    if (n < 0 || n - s <= 1) {
-        return false;
-    }
-    // lets assume that the array is sorted
-    
-    // s       x           n
-    // 0 1 2 3 4 5 6 7 8 9
-
-    //         s     x     n
-    // 0 1 2 3 4 5 6 7 8 9
-
-
-    eprintf("s: %i\n", s);
-    eprintf("n: %i\n", n);
-    
-    
-    int p = (s + n) / 2;
-    eprintf("%i\n", p);
-
-    int m = values[p];
-    
-    if (m == value) {
-        return true;
-    } else if (value < m) {
-        // value is on the left of p
-        return searchIntern(value, values, s, p + 1);
-    } else if (value > m) {
-        // value is on the right of p
-        return searchIntern(value, values, p, n);
-    } else {
-        printf("lol");
-        return false;
-    }
-}
-*/
 
 /**
  * Sorts array of n values.
