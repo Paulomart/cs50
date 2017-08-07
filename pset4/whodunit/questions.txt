@@ -1,0 +1,12 @@
+1.  A header files which provides more flexible and better performing int types.
+2.  The int types provided by the stdint.h lib have fixed width in memory. The sizes of type does not change across different os's.
+3.  BYTE = uint8_t = 8 Bits, DWORD = uint32_t = 32 Bits, LONG = int32_t = 32 Bits, WORD = uint16_t = 16 Bits
+4.  0x42 0x4d or BM
+5.  bfSize is the total size of the file. biSize is the amount of bits required by the header of the bmp file.
+6.  If biHeight is negative, the bitmaps content are top to bottom instead of bottom to top.
+7.  biBitCount
+8.  When the file is not found, the user does not have the right permissions to access it or there is not sufficient storage.
+9.  The thrid argument is how many elements should be read/written, in our case this is always one element at the time.
+10. (4 - (3 * 3 * 8) % 4) % 4 = 0
+11. fseek skips n bytes.
+12. SEEK_CUR is the mode how to seek forward, SEEK_CUR just jumps forward from the current position.
