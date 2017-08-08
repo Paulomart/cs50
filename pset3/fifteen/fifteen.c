@@ -156,8 +156,7 @@ void greet(void)
  */
 void init(void)
 {
-    int x;
-    int y;
+    int x, y;
     int c = d * d - 1;
     for (x = 0; x < d; x++) {
         for (y = 0; y < d; y++) {
@@ -181,9 +180,7 @@ void init(void)
  */
 void draw(void)
 {
-    int x;
-    int y;
-    int n;
+    int x, y, n;
     for (x = 0; x < d; x++) {
         for (y = 0; y < d; y++) {
             n = board[x][y];
@@ -210,25 +207,15 @@ bool move(int tile)
         return false;
     }
     
-    int tileX, tileY, x, y;
+    int tileX, tileY, emptyX, emptyY, x, y;
     for (x = 0; x < d; x++) {
         for (y = 0; y < d; y++) {
             if (board[x][y] == tile) {
                 tileX = x;
                 tileY = y;
-                break;
-            }
-        }
-    }
-    
-    // search for empty
-    int emptyX, emptyY;
-    for (x = 0; x < d; x++) {
-        for (y = 0; y < d; y++) {
-            if (board[x][y] == 0) {
+            } else if (board[x][y] == 0) {
                 emptyX = x;
                 emptyY = y;
-                break;
             }
         }
     }
@@ -256,8 +243,7 @@ bool move(int tile)
  */
 bool won(void)
 {
-    int x;
-    int y;
+    int x, y;
     int c = 1;
     for (x = 0; x < d; x++) {
         for (y = 0; y < d; y++) {
